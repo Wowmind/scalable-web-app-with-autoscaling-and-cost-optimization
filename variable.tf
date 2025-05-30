@@ -17,3 +17,11 @@ variable "private_subnets" {
 variable "instance_type" {
   default = "t3.micro"
 }
+
+variable "user" {
+  default = "LW4gInVzZXIiIA0K"
+}
+
+variable "pass" {
+  default = "LW4gIjEyMzQ1NiIgDQo="
+}
