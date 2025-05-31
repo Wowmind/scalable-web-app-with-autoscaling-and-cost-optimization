@@ -69,7 +69,7 @@ resource "aws_lb_listener" "web_listener" {
 
 resource "aws_autoscaling_attachment" "asg_alb_attach" {
   autoscaling_group_name = aws_autoscaling_group.web.name
-  alb_target_group_arn   = aws_lb_target_group.web_tg.arn
+  lb_target_group_arn     = aws_lb_target_group.web_tg.arn
 }
 
 //RDS
