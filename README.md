@@ -1,4 +1,4 @@
-# Scalable Web Application with Terraform and GitHub Actions for Availability and disaster recovery(AWS)
+# Scalable Web Application with Terraform and GitHub Actions for Availability, Monitoring and Disaster recovery(AWS)
 
 This repository contains a production-ready infrastructure-as-code setup to deploy a **scalable and cost-optimized web application** using AWS services. It provisions a fully functional environment with:
 
