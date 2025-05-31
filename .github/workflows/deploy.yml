@@ -1,5 +1,3 @@
-//Github Action
-
 name: Deploy Web App to EC2
 
 on:
