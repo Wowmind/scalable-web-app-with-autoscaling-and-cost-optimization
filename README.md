@@ -21,12 +21,12 @@ This repository contains a production-ready infrastructure-as-code setup to depl
 - Launch template for EC2 instances
 - Auto Scaling Group based on CPU utilization
 
-###  ALB (`alb.tf`)
+###  ALB 
 - Application Load Balancer in public subnets
 - Listener and Target Group
 - Attaches ALB to ASG using `aws_autoscaling_attachment`
 
-###  RDS (`rds.tf`)
+###  RDS 
 - Multi-AZ MySQL RDS instance
 - Subnet group and parameter group for DB
 
@@ -34,7 +34,7 @@ This repository contains a production-ready infrastructure-as-code setup to depl
 - IAM Role for EC2 instance to access CloudWatch
 - Policy to allow logging and SSM access
 
-###  Monitoring (`cloudwatch.tf`)
+###  Monitoring 
 - CloudWatch alarm for CPU threshold breach
 
 ###  GitHub Actions CI/CD (`.github/workflows/deploy.yml`)
