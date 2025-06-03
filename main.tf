@@ -45,7 +45,7 @@ resource "aws_lb" "web_alb" {
   name               = "web-alb"
   internal           = false
   load_balancer_type = "application"
-  security_groups    = [aws_security_group.alb_sg.id]
+  security_groups    = [aws_security_group.web_sg.id]
   subnets            = aws_subnet.public[*].id
 }
 
@@ -91,7 +91,7 @@ resource "aws_db_instance" "mysql" {
   publicly_accessible    = false
   skip_final_snapshot    = true
   db_subnet_group_name   = aws_db_subnet_group.main.name
-  vpc_security_group_ids = [aws_security_group.db_sg.id]
+  vpc_security_group_ids = [aws_security_group.web_sg.id]
 }
 
 
